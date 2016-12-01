@@ -62,6 +62,7 @@ Dependencies tool
 * macVIM: brew
 * Exuberant CTAGS: brew install ctags
 * vimgo: https://github.com/fatih/vim-go
+* [remap capslock to esc](http://stackoverflow.com/questions/127591/using-caps-lock-as-esc-in-mac-os-x)
 
 
   
