@@ -39,6 +39,13 @@ INSTALLATIONS
 
 For a full setup or custom installation, follow the guide [here](https://golang.org/doc/install).
 
+##VIM
+* Vim: (brew install luajit) brew install vim --with-luajit
+* [vimplug](https://github.com/junegunn/vim-plug)
+* [remap capslock to esc](http://stackoverflow.com/questions/127591/using-caps-lock-as-esc-in-mac-os-x)
+* Exuberant CTAGS: brew install ctags
+* run :PlugInstall in vim to install all plugs
+
 ###Useful outside packages
 ORM
 * [Gorm](https://github.com/jinzhu/gorm)
@@ -56,13 +63,3 @@ Dependencies tool
 ##Leisure
 * [thefuck](https://github.com/nvbn/thefuck)
     * App that corrects your previous console command
-   
-
-##For when I eventually use VIM
-* macVIM: brew
-* Exuberant CTAGS: brew install ctags
-* vimgo: https://github.com/fatih/vim-go
-* [remap capslock to esc](http://stackoverflow.com/questions/127591/using-caps-lock-as-esc-in-mac-os-x)
-
-
-  
