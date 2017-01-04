@@ -41,10 +41,9 @@ For a full setup or custom installation, follow the guide [here](https://golang.
 
 ##VIM
 * Vim: (brew install luajit) brew install vim --with-luajit
-* [vimplug](https://github.com/junegunn/vim-plug)
+* [vimplug](https://github.com/junegunn/vim-plug) - run :PlugInstall in vim to install all plugs
 * [remap capslock to esc](http://stackoverflow.com/questions/127591/using-caps-lock-as-esc-in-mac-os-x)
 * Exuberant CTAGS: brew install ctags
-* run :PlugInstall in vim to install all plugs
 
 ###Useful outside packages
 ORM
