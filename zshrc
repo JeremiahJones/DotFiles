@@ -83,12 +83,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval "$(thefuck --alias)"
-alias gowork="cd ~/Projects/go-workspace/src/github.com/nuvi/"
 
 #normal exports
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:/usr/local/sbin
 
 #go exports
-export GOPATH=$HOME/Projects/go-workspace
+export GOPATH=$HOME/projects/go-workspace
 export PATH=$GOPATH/bin:$PATH
