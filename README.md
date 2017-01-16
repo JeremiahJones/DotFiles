@@ -8,7 +8,7 @@ INSTALLATIONS
     * an integrated development environment (IDE) containing a suite of software development tools developed by Apple for developing software.
 * [Brew](http://brew.sh/)
     * Homebrew installs the stuff you need that Apple didn’t.
-    * Brew install these: Node, Git, Postgresql, Redis, ZSH
+    * Brew install these: Node, Git, Postgresql, Redis, ZSH, rabbitmq
 * [OSX GCC Installer](https://github.com/kennethreitz/osx-gcc-installer) (Bundler etc)
     * allows you to install the essential compilers from either pre-built binary packages or helps you create your own installer.
 * Zsh: install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
