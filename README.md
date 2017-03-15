@@ -1,7 +1,7 @@
 INSTALLATIONS
 ============
 
-##THE BASICS
+## THE BASICS
 
 * [Iterm2](https://www.iterm2.com/)
 * XCode: AppStore
@@ -19,11 +19,11 @@ INSTALLATIONS
     * A font that clearly distinguishes between O and 0, as well as i, l, and 1.
 
 
-##GOLANG
-#####Make sure to have git installed locally before downloading
-#####If you are upgrading from an older version of Go you must first [remove the existing version](https://golang.org/doc/install#uninstall).
+## GOLANG
+##### Make sure to have git installed locally before downloading
+##### If you are upgrading from an older version of Go you must first [remove the existing version](https://golang.org/doc/install#uninstall).
 
-###Quick-Guide Checklist: 
+### Quick-Guide Checklist: 
 
 * Download the most current version of the main Golang binaries
     * Download the latest go version [here](https://golang.org/dl/)
@@ -39,7 +39,7 @@ INSTALLATIONS
 
 For a full setup or custom installation, follow the guide [here](https://golang.org/doc/install).
 
-##VIM
+## VIM
 * Vim: (brew install luajit) brew install vim --with-luajit
 * [vimplug](https://github.com/junegunn/vim-plug) - run :PlugInstall in vim to install all plugs
 * [remap capslock to esc](http://stackoverflow.com/questions/127591/using-caps-lock-as-esc-in-mac-os-x)
@@ -55,12 +55,12 @@ Testing/Mocking Package
 Dependencies tool
 * [Godep](https://github.com/tools/godep)
 
-##RUBY 
+## RUBY 
 * RVM (ruby version manager)
 * rvm install (rubyversiongoeshere)
 * gem install bundler
 * gem install rails
 
-##Leisure
+## Leisure
 * [thefuck](https://github.com/nvbn/thefuck)
     * App that corrects your previous console command
