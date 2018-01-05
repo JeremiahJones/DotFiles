@@ -1,0 +1,28 @@
+~~~~~~~~~~~~~~~
+Rails:
+~~~~~~~~~~~~~~~
+SHOW SQL QUERIES IN CONSOLE:
+ActiveRecord::Base.logger = Logger.new(STDOUT)
+FOR SIMPLECOV TESTS:
+COVERAGE=true rspec spec
+
+~~~~~~~~~~~~~~~
+Database/SQL:
+~~~~~~~~~~~~~~~
+Put everything from a table into another:
+  INSERT INTO database2.table2 SELECT * from database1.table1
+  
+~~~~~~~~~~~~~~~
+Mysql:
+~~~~~~~~~~~~~~~
+Dump database to file:
+  mysqldump -uroot checkmedicv3_development > npidea.sql
+Export sql file to database:
+  mysql -uroot checkmedicv3_development < npidea.sql
+  
+~~~~~~~~~~~~~~~  
+VIM NOTES:
+~~~~~~~~~~~~~~~
+
+~ to uppercase/lowercase based on whats visually highlighted
+SHIFT + i   Will take you to the front of the line and put you in insert mode
