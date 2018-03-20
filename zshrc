@@ -83,6 +83,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval "$(thefuck --alias)"
+alias bers='bundle exec rails s'
+alias dball='rake db:drop db:create db:migrate db:seed'
+alias rdbdc='rake db:drop db:create'
+alias rdbdcm='rake db:drop db:create db:migrate'
+alias rdbms='rake db:migrate db:seed'
+alias rake='noglob rake'
+alias fullsuiteparallel='bundle && bin/rails db:environment:set RAILS_ENV=test && RAILS_ENV=test rails parallel:dro    p parallel:create parallel:migrate parallel:spec'
 
 #normal exports
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
@@ -91,3 +98,7 @@ export PATH=$PATH:/usr/local/sbin
 #go exports
 export GOPATH=$HOME/projects/go-workspace
 export PATH=$GOPATH/bin:$PATH
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
