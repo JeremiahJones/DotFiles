@@ -39,21 +39,26 @@ INSTALLATIONS
 
 For a full setup or custom installation, follow the guide [here](https://golang.org/doc/install).
 
-## VIM
-* Vim: (brew install luajit) brew install vim --with-luajit
-* [vimplug](https://github.com/junegunn/vim-plug) - run :PlugInstall in vim to install all plugs
-* [remap capslock to esc](http://stackoverflow.com/questions/127591/using-caps-lock-as-esc-in-mac-os-x)
-* Exuberant CTAGS: brew install ctags
-
 ###Useful outside packages
+
 ORM
+
 * [Gorm](https://github.com/jinzhu/gorm)
 
 Testing/Mocking Package
+
 * [Assert](https://github.com/stretchr/testify)
 
 Dependencies tool
+
 * [Godep](https://github.com/tools/godep)
+
+## VIM
+* Vim: (brew install luajit) brew install vim --with-luajit
+* [vimplug](https://github.com/junegunn/vim-plug) - run :PlugInstall in vim to install all plugs
+* remap caps lock to esc
+* Exuberant CTAGS: brew install ctags
+
 
 ## RUBY 
 * RVM (ruby version manager)
