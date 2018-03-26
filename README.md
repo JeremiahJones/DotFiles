@@ -61,8 +61,7 @@ Dependencies tool
 
 
 ## RUBY 
-* RVM (ruby version manager)
-* rvm install (rubyversiongoeshere)
+* Install current versions of RVM and RUBY `\curl -L https://get.rvm.io | bash -s stable --ruby`
 * gem install bundler
 * gem install rails
 
