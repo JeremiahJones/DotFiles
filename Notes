@@ -11,7 +11,7 @@ Database/SQL:
 ~~~~~~~~~~~~~~~
 Put everything from a table into another:
   INSERT INTO database2.table2 SELECT * from database1.table1
-  
+
 ~~~~~~~~~~~~~~~
 Mysql:
 ~~~~~~~~~~~~~~~
@@ -19,10 +19,72 @@ Dump database to file:
   mysqldump -uroot checkmedicv3_development > npidea.sql
 Export sql file to database:
   mysql -uroot checkmedicv3_development < npidea.sql
-  
-~~~~~~~~~~~~~~~  
+
+~~~~~~~~~~~~~~~
 VIM NOTES:
 ~~~~~~~~~~~~~~~
 
 ~ to uppercase/lowercase based on whats visually highlighted
 SHIFT + i   Will take you to the front of the line and put you in insert mode
+
+~~~~~~~~~~~~~~~
+TERMINAL/UNIX NOTES:
+~~~~~~~~~~~~~~~
+
+Cmd [ and cmd ] moves panes in terminal
+
+~~~~~~~~~~~~~~~
+GRAPHQL NOTES:  
+~~~~~~~~~~~~~~~
+
+! On the end of a field means that it is required
+Field within brackets [] means that it has a relationship between types example:
+
+Type Post {
+Title: String!
+Author: Person!
+}
+
+Type Person {
+Name: String!
+Age: Int!
+Posts: [Post!]!
+}
+
+{
+	“rootFieldGoesHere”: [
+			#section within rootField is called the payload
+			{ “attribute_key”: “attribute_value” }
+]
+}
+
+WHEN CREATING A NEW RESOURCE:
+- Set up queries for returning links. (In app/graphql/types/model_type.rb)
+
+# defines a new GraphQL type
+Types::LinkType = GraphQL::ObjectType.define do
+  # this type is named `Link`
+  name 'Link'
+
+  # it has the following fields
+  field :id, !types.ID
+  field :url, !types.String
+  field :description, !types.String
+end
+
+- Write resolvers so server knows how to handle the query (Resolvers are functions that the GraphQL server uses to fetch the data for a specific query. Each field of your GraphQL types needs a corresponding resolver function.)
+    - Update query_type to handle new model (app/graphql/types/query_type.rb)
+    -  Types::QueryType = GraphQL::ObjectType.define do
+                   name 'Query'
+
+                   # queries are just represented as fields
+                      field :allLinks, !types[Types::LinkType] do
+                         # resolve would be called in order to fetch data for that field
+                           resolve -> (obj, args, ctx) { Link.all }
+                     end
+                   end
+MUTATIONS are used for actions like creating and deleting
+
+
+
+BANG ON END OF TYPE MEANS REQUIRED

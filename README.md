@@ -64,7 +64,3 @@ Dependencies tool
 * Install current versions of RVM and RUBY `\curl -L https://get.rvm.io | bash -s stable --ruby`
 * gem install bundler
 * gem install rails
-
-## Leisure
-* [thefuck](https://github.com/nvbn/thefuck)
-    * App that corrects your previous console command

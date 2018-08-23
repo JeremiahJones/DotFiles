@@ -82,7 +82,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-eval "$(thefuck --alias)"
+
+# Ruby/Rails aliases
 alias bers='bundle exec rails s'
 alias dball='rake db:drop db:create db:migrate db:seed'
 alias rdbdc='rake db:drop db:create'
@@ -90,6 +91,17 @@ alias rdbdcm='rake db:drop db:create db:migrate'
 alias rdbms='rake db:migrate db:seed'
 alias rake='noglob rake'
 alias fullsuiteparallel='bundle && bin/rails db:environment:set RAILS_ENV=test && RAILS_ENV=test rails parallel:dro    p parallel:create parallel:migrate parallel:spec'
+
+# Git aliases
+alias gs='git status'
+alias gp='git pull'
+alias gpom='git pull origin master'
+alias gcm='git checkout master'
+alias gb='git branch'
+
+function gcb() {
+    git checkout -b $1 bash
+}
 
 #normal exports
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
