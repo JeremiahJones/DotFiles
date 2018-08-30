@@ -9,14 +9,14 @@ INSTALLATIONS
 * [Brew](http://brew.sh/)
     * Homebrew installs the stuff you need that Apple didn’t.
     * Brew install these: brew install node git postgresql redis zsh rabbitmq
-* [OSX GCC Installer](https://github.com/kennethreitz/osx-gcc-installer) (Bundler etc)
-    * allows you to install the essential compilers from either pre-built binary packages or helps you create your own installer.
 * Zsh: install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
     * Replaces the default Bash shell with Zsh
     * Oh My Zsh is special configurations for Zsh
     * Place robbyrussel.zsh-themes into custom themes
 * [ProfontX](http://faisal.com/software/profontx/)
     * A font that clearly distinguishes between O and 0, as well as i, l, and 1.
+* Once all the git ignore and git files have been added run this command to enforce it `git config --global core.excludesfile ~/.gitignore_global`
+* Update mac to have hot corner in bottom left, change scroll direction, map caps-lock to escape, change font in iterm2 to profontX
 
 
 ## GOLANG
