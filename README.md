@@ -15,7 +15,11 @@ INSTALLATIONS
     * Place robbyrussel.zsh-themes into custom themes
 * [ProfontX](http://faisal.com/software/profontx/)
     * A font that clearly distinguishes between O and 0, as well as i, l, and 1.
-* Once all the git ignore and git files have been added run this command to enforce it `git config --global core.excludesfile ~/.gitignore_global`
+* Once all the git ignore and git files have been added
+   * run this command to enforce it `git config --global core.excludesfile ~/.gitignore_global`
+   * setup username `git config --global user.name "Your Name"`
+   * setup email `git config --global user.email you@example.com`
+
 * Update mac to have hot corner in bottom left, change scroll direction, map caps-lock to escape, change font in iterm2 to profontX
 
 
