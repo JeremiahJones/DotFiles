@@ -98,6 +98,7 @@ alias gp='git pull'
 alias gpom='git pull origin master'
 alias gcm='git checkout master'
 alias gb='git branch'
+alias gl='git log'
 
 function gcb() {
     git checkout -b $1 bash
